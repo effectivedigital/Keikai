@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public enum Duration: Int {
+public enum Duration: Int {
   case short   = 1
   case middle  = 3
   case long    = 5

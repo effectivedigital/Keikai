@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc public enum AnimationType: Int {
+public enum AnimationType: Int {
   case fadeInFadeOut
   case slideFromBottomToTop
   case slideFromBottomBackToBottom

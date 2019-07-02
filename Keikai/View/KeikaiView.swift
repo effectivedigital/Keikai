@@ -9,20 +9,21 @@
 import Foundation
 
 open class KeiKaiView: UIView {
-  fileprivate static let deafaultFrame: CGRect = CGRect(x: 0, y: 0, width: 320, height: 44)
-  fileprivate static let snackbarMinHeight: CGFloat = 44
+  // MARK: - Properties
+  fileprivate static let defaultFrame: CGRect = CGRect(x: 0, y: 0, width: 320, height: 44)
+  fileprivate static let minimumHeight: CGFloat = 44
   
   public required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
   
   public override init(frame: CGRect) {
-    super.init(frame: KeiKaiView.deafaultFrame)
+    super.init(frame: KeiKaiView.defaultFrame)
     configure()
   }
  
   public init() {
-    super.init(frame: KeiKaiView.deafaultFrame)
+    super.init(frame: KeiKaiView.defaultFrame)
     configure()
   }
   
@@ -30,7 +31,7 @@ open class KeiKaiView: UIView {
     NotificationCenter.default.removeObserver(self)
   }
 }
-
+// MARK: - Private Methods
 private extension KeiKaiView {
   func configure() { }
 }
