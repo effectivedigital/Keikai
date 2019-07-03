@@ -1,0 +1,28 @@
+{
+  "name": "Keikai",
+  "version": "0.0.1",
+  "summary": "KeiKai is a Swift framework for displaying message in app.",
+  "description": "KeiKai is a Swift framework for displaying message in app.",
+  "homepage": "http://EXAMPLE/Keikai",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Aashish Tamsya": "aashish.tamsya@gmail.com"
+  },
+  "platforms": {
+    "ios": null
+  },
+  "source": {
+    "git": "https://github.com/aashishtamsya/Keikai.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "Sources",
+    "Sources/**/*.{h,m}",
+    "Sources/**/*.swift"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "public_header_files": "Sources/**/*.h"
+}

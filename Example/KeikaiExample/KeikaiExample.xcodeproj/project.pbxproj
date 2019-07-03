@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07B432D944BBB38EE6B030FB /* Pods_KeikaiExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35412C29B3E5854799F2EF9D /* Pods_KeikaiExampleTests.framework */; };
+		7B9E1BDFA0C0F125FD2C62B4 /* Pods_KeikaiExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2476B7BEC7E5132FEF782394 /* Pods_KeikaiExample.framework */; };
 		FD0CD41E22CC8CAA0049CBA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0CD41D22CC8CAA0049CBA8 /* AppDelegate.swift */; };
 		FD0CD42022CC8CAA0049CBA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0CD41F22CC8CAA0049CBA8 /* ViewController.swift */; };
 		FD0CD42322CC8CAA0049CBA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0CD42122CC8CAA0049CBA8 /* Main.storyboard */; };
@@ -16,9 +18,6 @@
 		FD0CD44B22CC91C90049CBA8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0CD44A22CC91C90049CBA8 /* TabBarController.swift */; };
 		FD0CD44D22CC91FE0049CBA8 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0CD44C22CC91FE0049CBA8 /* TabBar.storyboard */; };
 		FD0CD45122CC92FD0049CBA8 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0CD45022CC92FD0049CBA8 /* OneViewController.swift */; };
-		FD0CD47322CCA6E10049CBA8 /* Keikai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CD47222CCA6E10049CBA8 /* Keikai.framework */; };
-		FD0CD47422CCA6F30049CBA8 /* Keikai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CD47222CCA6E10049CBA8 /* Keikai.framework */; };
-		FD0CD47522CCA6F30049CBA8 /* Keikai.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CD47222CCA6E10049CBA8 /* Keikai.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FD0CD47522CCA6F30049CBA8 /* Keikai.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +44,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2476B7BEC7E5132FEF782394 /* Pods_KeikaiExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeikaiExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3171514339E3C8816EB75633 /* Pods-KeikaiExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeikaiExampleTests.release.xcconfig"; path = "Target Support Files/Pods-KeikaiExampleTests/Pods-KeikaiExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		35412C29B3E5854799F2EF9D /* Pods_KeikaiExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeikaiExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F0A32236D844CE13075BBE /* Pods-KeikaiExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeikaiExample.release.xcconfig"; path = "Target Support Files/Pods-KeikaiExample/Pods-KeikaiExample.release.xcconfig"; sourceTree = "<group>"; };
+		E7743CDFA8779C9A74B41DB6 /* Pods-KeikaiExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeikaiExample.debug.xcconfig"; path = "Target Support Files/Pods-KeikaiExample/Pods-KeikaiExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F08271120B568C87D23DA735 /* Pods-KeikaiExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeikaiExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-KeikaiExampleTests/Pods-KeikaiExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FD0CD41A22CC8CAA0049CBA8 /* KeikaiExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeikaiExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD0CD41D22CC8CAA0049CBA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD0CD41F22CC8CAA0049CBA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +63,6 @@
 		FD0CD44A22CC91C90049CBA8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FD0CD44C22CC91FE0049CBA8 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		FD0CD45022CC92FD0049CBA8 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
-		FD0CD47222CCA6E10049CBA8 /* Keikai.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Keikai.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0CD47422CCA6F30049CBA8 /* Keikai.framework in Frameworks */,
-				FD0CD47322CCA6E10049CBA8 /* Keikai.framework in Frameworks */,
+				7B9E1BDFA0C0F125FD2C62B4 /* Pods_KeikaiExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,19 +78,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B432D944BBB38EE6B030FB /* Pods_KeikaiExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A54E9D18A722DAB78AFA79B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7743CDFA8779C9A74B41DB6 /* Pods-KeikaiExample.debug.xcconfig */,
+				D8F0A32236D844CE13075BBE /* Pods-KeikaiExample.release.xcconfig */,
+				F08271120B568C87D23DA735 /* Pods-KeikaiExampleTests.debug.xcconfig */,
+				3171514339E3C8816EB75633 /* Pods-KeikaiExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F1EF1F14D538B25A073FAF50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2476B7BEC7E5132FEF782394 /* Pods_KeikaiExample.framework */,
+				35412C29B3E5854799F2EF9D /* Pods_KeikaiExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD0CD41122CC8CAA0049CBA8 = {
 			isa = PBXGroup;
 			children = (
-				FD0CD47222CCA6E10049CBA8 /* Keikai.framework */,
 				FD0CD41C22CC8CAA0049CBA8 /* KeikaiExample */,
 				FD0CD43122CC8CAD0049CBA8 /* KeikaiExampleTests */,
 				FD0CD41B22CC8CAA0049CBA8 /* Products */,
+				A54E9D18A722DAB78AFA79B4 /* Pods */,
+				F1EF1F14D538B25A073FAF50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,10 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD0CD43722CC8CAD0049CBA8 /* Build configuration list for PBXNativeTarget "KeikaiExample" */;
 			buildPhases = (
+				4E27B101F6B11FE5A71DD765 /* [CP] Check Pods Manifest.lock */,
 				FD0CD41622CC8CAA0049CBA8 /* Sources */,
 				FD0CD41722CC8CAA0049CBA8 /* Frameworks */,
 				FD0CD41822CC8CAA0049CBA8 /* Resources */,
 				FD0CD44122CC8E200049CBA8 /* Embed Frameworks */,
+				A6E1523CD8FEB6ABEEEF3C05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD0CD43A22CC8CAD0049CBA8 /* Build configuration list for PBXNativeTarget "KeikaiExampleTests" */;
 			buildPhases = (
+				5DDAB8ED99944B893FAA7C41 /* [CP] Check Pods Manifest.lock */,
 				FD0CD42A22CC8CAD0049CBA8 /* Sources */,
 				FD0CD42B22CC8CAD0049CBA8 /* Frameworks */,
 				FD0CD42C22CC8CAD0049CBA8 /* Resources */,
@@ -239,6 +267,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E27B101F6B11FE5A71DD765 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeikaiExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DDAB8ED99944B893FAA7C41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KeikaiExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6E1523CD8FEB6ABEEEF3C05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeikaiExample/Pods-KeikaiExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KeikaiExample/Pods-KeikaiExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KeikaiExample/Pods-KeikaiExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD0CD41622CC8CAA0049CBA8 /* Sources */ = {
@@ -408,6 +500,7 @@
 		};
 		FD0CD43822CC8CAD0049CBA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7743CDFA8779C9A74B41DB6 /* Pods-KeikaiExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -430,6 +523,7 @@
 		};
 		FD0CD43922CC8CAD0049CBA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F0A32236D844CE13075BBE /* Pods-KeikaiExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +546,7 @@
 		};
 		FD0CD43B22CC8CAD0049CBA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F08271120B568C87D23DA735 /* Pods-KeikaiExampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +568,7 @@
 		};
 		FD0CD43C22CC8CAD0049CBA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3171514339E3C8816EB75633 /* Pods-KeikaiExampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

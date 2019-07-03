@@ -1,0 +1,22 @@
+PODS:
+  - Keikai (0.0.1)
+
+DEPENDENCIES:
+  - Keikai (from `https://github.com/aashishtamsya/Keikai`, tag `0.0.1`)
+
+EXTERNAL SOURCES:
+  Keikai:
+    :git: https://github.com/aashishtamsya/Keikai
+    :tag: 0.0.1
+
+CHECKOUT OPTIONS:
+  Keikai:
+    :git: https://github.com/aashishtamsya/Keikai
+    :tag: 0.0.1
+
+SPEC CHECKSUMS:
+  Keikai: e67cacd4229f60883c18c1346aad7c02f865455e
+
+PODFILE CHECKSUM: 5e862cb111be205b403b52856da4e22422aa4e13
+
+COCOAPODS: 1.7.0

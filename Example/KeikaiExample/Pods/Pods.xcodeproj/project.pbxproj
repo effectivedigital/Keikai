@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D83751960FB57235E2C3026F007D1AF /* KeikaiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011F8B7FE4029079222D9E50E3900358 /* KeikaiView.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3F375A40BA15F4BF6170DCFE98257523 /* Keikai.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5768F71BFE27CC78CF7D39AC5D9E85 /* Keikai.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		417ADD4CF2D7000C2D4D8BF59E58DCB1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		538FFFE14ADDCD73F6B24D6EBEE77FE9 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49D1190B14FEEBC695258E9D3681402 /* AnimationType.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		832ED5BF828C63E2AA031BAD19BBF01E /* Keikai.h in Headers */ = {isa = PBXBuildFile; fileRef = A5045FC80DF51797E90EE78947EFEFA2 /* Keikai.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AF71BEBDDCBE10648100BCAB0B3EA0D /* Keikai-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CC36989E0D1EA2E261BAB14261CB69 /* Keikai-dummy.m */; };
+		AF480E16222056F6CE6292491D488167 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B1E7DA532FD3BCC41AD8D12E4DAA8466 /* Pods-KeikaiExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30F0D8C398E0207FD44C9E2EE78DDC01 /* Pods-KeikaiExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B38801C2BDAE68A4BEF2F07DE757F037 /* Pods-KeikaiExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A39A11EE465197AD5F3AC2DFF74847D8 /* Pods-KeikaiExample-dummy.m */; };
+		B5FBC9C33D1DC2DE8969A5FD2CDF6294 /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5F4FA2C0E84C8012663F3C1FC588C2 /* Duration.swift */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CF8A9C7B37DBDF15115F3D23433AAC2D /* Pods-KeikaiExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319F164F54A127E1A9E476BCF48EACB /* Pods-KeikaiExampleTests-dummy.m */; };
+		D4EEF14E525303DCB994084BA60AD1C2 /* Pods-KeikaiExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD77C9C60584641D3B0BC8252E43A1B0 /* Pods-KeikaiExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED52DBF68514A790164259A5667E82EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FF44698AC562369486C4843B98EE7F90 /* Keikai-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A43673F49164E9B660E50FBB0C7C32 /* Keikai-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42B7D20079160E4DDDB306F9E1D55E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B027BCBC45D6E8163AA635B5572B157A;
+			remoteInfo = "Pods-KeikaiExample";
+		};
+		843F7FE4F51E146766503E76911C98B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E76DEBAD81EA45E51A3E132BAFC253B;
+			remoteInfo = Keikai;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011F8B7FE4029079222D9E50E3900358 /* KeikaiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeikaiView.swift; path = Sources/View/KeikaiView.swift; sourceTree = "<group>"; };
+		0367F7BF817EA7143D7F9A3907A655BF /* Pods-KeikaiExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeikaiExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0453D91C583D7172AFC3962FB568C655 /* Keikai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Keikai.framework; path = Keikai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E9D986A28BC56F04F285A510F027D96 /* Keikai-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Keikai-Info.plist"; sourceTree = "<group>"; };
+		30F0D8C398E0207FD44C9E2EE78DDC01 /* Pods-KeikaiExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeikaiExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		42145FE709C426363537CEAF1F464BAF /* Keikai-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keikai-prefix.pch"; sourceTree = "<group>"; };
+		421A6E481C902AB502B670CAC10B8714 /* Pods-KeikaiExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeikaiExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4319F164F54A127E1A9E476BCF48EACB /* Pods-KeikaiExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeikaiExampleTests-dummy.m"; sourceTree = "<group>"; };
+		4733F1E52C4335FB7047AA50A143A4FD /* Keikai.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Keikai.modulemap; sourceTree = "<group>"; };
+		48318E7DE8BAFAC6CB859B7F616C4FAC /* Pods-KeikaiExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeikaiExampleTests-Info.plist"; sourceTree = "<group>"; };
+		50A43673F49164E9B660E50FBB0C7C32 /* Keikai-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Keikai-umbrella.h"; sourceTree = "<group>"; };
+		570D5B952CD2D8C5DA3E3CA5C03081A7 /* Pods_KeikaiExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeikaiExampleTests.framework; path = "Pods-KeikaiExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		577D19018D176C655B28DDCE99CD83B8 /* Pods-KeikaiExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeikaiExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		773F2B3B37ECABC2AE25EFB3F6ED502C /* Pods-KeikaiExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeikaiExampleTests.modulemap"; sourceTree = "<group>"; };
+		824EECBDFED7057D0EC85CA34385B6CB /* Pods-KeikaiExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KeikaiExample.modulemap"; sourceTree = "<group>"; };
+		982BE4598DD742757E56E929096E1552 /* Pods-KeikaiExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeikaiExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		99CC36989E0D1EA2E261BAB14261CB69 /* Keikai-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Keikai-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A39A11EE465197AD5F3AC2DFF74847D8 /* Pods-KeikaiExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KeikaiExample-dummy.m"; sourceTree = "<group>"; };
+		A49D1190B14FEEBC695258E9D3681402 /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = Sources/General/AnimationType.swift; sourceTree = "<group>"; };
+		A5045FC80DF51797E90EE78947EFEFA2 /* Keikai.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Keikai.h; path = Sources/Keikai.h; sourceTree = "<group>"; };
+		AD5768F71BFE27CC78CF7D39AC5D9E85 /* Keikai.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keikai.swift; path = Sources/Keikai.swift; sourceTree = "<group>"; };
+		AD9409BE0A88479340155181EF83A2D2 /* Pods-KeikaiExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeikaiExample.debug.xcconfig"; sourceTree = "<group>"; };
+		B5CAF3DC1C4B0DA30B8BBF9BD0BD6B82 /* Pods-KeikaiExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KeikaiExample-frameworks.sh"; sourceTree = "<group>"; };
+		B9BC58CE0AF9A7273D64C376CEA86177 /* Pods-KeikaiExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KeikaiExample.release.xcconfig"; sourceTree = "<group>"; };
+		BD747D89DD33AA7EB06DFE4A66206E12 /* Pods-KeikaiExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeikaiExample-Info.plist"; sourceTree = "<group>"; };
+		BD77C9C60584641D3B0BC8252E43A1B0 /* Pods-KeikaiExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KeikaiExample-umbrella.h"; sourceTree = "<group>"; };
+		C2C77AACA02883DAD2A7BD127080B932 /* Keikai.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Keikai.xcconfig; sourceTree = "<group>"; };
+		C36AEA0FCCD9629B118078F4660CE57F /* Pods-KeikaiExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KeikaiExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D1C60039B3800D65EFD22DC7B6AD3EEA /* Pods_KeikaiExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KeikaiExample.framework; path = "Pods-KeikaiExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E61064B204BF4F6FF6C5B8C3654272 /* Pods-KeikaiExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KeikaiExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED5F4FA2C0E84C8012663F3C1FC588C2 /* Duration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Duration.swift; path = Sources/General/Duration.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2716FBD3AA651433B52D54A46A643870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED52DBF68514A790164259A5667E82EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3941DFA83FEEF963EB703032FE52580D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF480E16222056F6CE6292491D488167 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F13CFEC046F3B7E6692373CC3C14E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417ADD4CF2D7000C2D4D8BF59E58DCB1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30A63244DA8CDC609087C349753C6142 /* Pods-KeikaiExample */ = {
+			isa = PBXGroup;
+			children = (
+				824EECBDFED7057D0EC85CA34385B6CB /* Pods-KeikaiExample.modulemap */,
+				C36AEA0FCCD9629B118078F4660CE57F /* Pods-KeikaiExample-acknowledgements.markdown */,
+				D8E61064B204BF4F6FF6C5B8C3654272 /* Pods-KeikaiExample-acknowledgements.plist */,
+				A39A11EE465197AD5F3AC2DFF74847D8 /* Pods-KeikaiExample-dummy.m */,
+				B5CAF3DC1C4B0DA30B8BBF9BD0BD6B82 /* Pods-KeikaiExample-frameworks.sh */,
+				BD747D89DD33AA7EB06DFE4A66206E12 /* Pods-KeikaiExample-Info.plist */,
+				BD77C9C60584641D3B0BC8252E43A1B0 /* Pods-KeikaiExample-umbrella.h */,
+				AD9409BE0A88479340155181EF83A2D2 /* Pods-KeikaiExample.debug.xcconfig */,
+				B9BC58CE0AF9A7273D64C376CEA86177 /* Pods-KeikaiExample.release.xcconfig */,
+			);
+			name = "Pods-KeikaiExample";
+			path = "Target Support Files/Pods-KeikaiExample";
+			sourceTree = "<group>";
+		};
+		3F7F3370366DADE595F82DDF3771A150 /* Keikai */ = {
+			isa = PBXGroup;
+			children = (
+				A49D1190B14FEEBC695258E9D3681402 /* AnimationType.swift */,
+				ED5F4FA2C0E84C8012663F3C1FC588C2 /* Duration.swift */,
+				A5045FC80DF51797E90EE78947EFEFA2 /* Keikai.h */,
+				AD5768F71BFE27CC78CF7D39AC5D9E85 /* Keikai.swift */,
+				011F8B7FE4029079222D9E50E3900358 /* KeikaiView.swift */,
+				FCEB1D38E06A949F99CB3E8DBFFBCC47 /* Support Files */,
+			);
+			name = Keikai;
+			path = Keikai;
+			sourceTree = "<group>";
+		};
+		455A080A0BED4EA2E2F160B15465BAE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F7F3370366DADE595F82DDF3771A150 /* Keikai */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		987DDDAE4DAB7AD5CBF6A4B0A6C7E479 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				30A63244DA8CDC609087C349753C6142 /* Pods-KeikaiExample */,
+				FB2C5226DF401BC686EBA3E08E8D3957 /* Pods-KeikaiExampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				455A080A0BED4EA2E2F160B15465BAE0 /* Pods */,
+				EE8D5F73A27F7A6BBF8DA5081FB317E9 /* Products */,
+				987DDDAE4DAB7AD5CBF6A4B0A6C7E479 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE8D5F73A27F7A6BBF8DA5081FB317E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0453D91C583D7172AFC3962FB568C655 /* Keikai.framework */,
+				D1C60039B3800D65EFD22DC7B6AD3EEA /* Pods_KeikaiExample.framework */,
+				570D5B952CD2D8C5DA3E3CA5C03081A7 /* Pods_KeikaiExampleTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB2C5226DF401BC686EBA3E08E8D3957 /* Pods-KeikaiExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				773F2B3B37ECABC2AE25EFB3F6ED502C /* Pods-KeikaiExampleTests.modulemap */,
+				577D19018D176C655B28DDCE99CD83B8 /* Pods-KeikaiExampleTests-acknowledgements.markdown */,
+				0367F7BF817EA7143D7F9A3907A655BF /* Pods-KeikaiExampleTests-acknowledgements.plist */,
+				4319F164F54A127E1A9E476BCF48EACB /* Pods-KeikaiExampleTests-dummy.m */,
+				48318E7DE8BAFAC6CB859B7F616C4FAC /* Pods-KeikaiExampleTests-Info.plist */,
+				30F0D8C398E0207FD44C9E2EE78DDC01 /* Pods-KeikaiExampleTests-umbrella.h */,
+				421A6E481C902AB502B670CAC10B8714 /* Pods-KeikaiExampleTests.debug.xcconfig */,
+				982BE4598DD742757E56E929096E1552 /* Pods-KeikaiExampleTests.release.xcconfig */,
+			);
+			name = "Pods-KeikaiExampleTests";
+			path = "Target Support Files/Pods-KeikaiExampleTests";
+			sourceTree = "<group>";
+		};
+		FCEB1D38E06A949F99CB3E8DBFFBCC47 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4733F1E52C4335FB7047AA50A143A4FD /* Keikai.modulemap */,
+				C2C77AACA02883DAD2A7BD127080B932 /* Keikai.xcconfig */,
+				99CC36989E0D1EA2E261BAB14261CB69 /* Keikai-dummy.m */,
+				1E9D986A28BC56F04F285A510F027D96 /* Keikai-Info.plist */,
+				42145FE709C426363537CEAF1F464BAF /* Keikai-prefix.pch */,
+				50A43673F49164E9B660E50FBB0C7C32 /* Keikai-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Keikai";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		122384D41EDA1EBD1F4096673E209B5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1E7DA532FD3BCC41AD8D12E4DAA8466 /* Pods-KeikaiExampleTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A42BC32229C80FD93646ACC25DD80DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4EEF14E525303DCB994084BA60AD1C2 /* Pods-KeikaiExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E9F1C0AD5495736572236FE521D30B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF44698AC562369486C4843B98EE7F90 /* Keikai-umbrella.h in Headers */,
+				832ED5BF828C63E2AA031BAD19BBF01E /* Keikai.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7E76DEBAD81EA45E51A3E132BAFC253B /* Keikai */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83D7A063847725585FED2E8B25C48AFF /* Build configuration list for PBXNativeTarget "Keikai" */;
+			buildPhases = (
+				D6E9F1C0AD5495736572236FE521D30B /* Headers */,
+				8BF07DC4E24A5D694A58335363EEC69F /* Sources */,
+				2716FBD3AA651433B52D54A46A643870 /* Frameworks */,
+				A9D2888A2DEE6354CFC9ADC19EB38D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keikai;
+			productName = Keikai;
+			productReference = 0453D91C583D7172AFC3962FB568C655 /* Keikai.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		929B8CC5CC53868F3C6191FBF7AA682C /* Pods-KeikaiExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5E194DD3A5957F87B2CE9AFAAF64E7A /* Build configuration list for PBXNativeTarget "Pods-KeikaiExampleTests" */;
+			buildPhases = (
+				122384D41EDA1EBD1F4096673E209B5A /* Headers */,
+				C8E62EEEA715C24B814DB95C746A2D3F /* Sources */,
+				D1F13CFEC046F3B7E6692373CC3C14E4 /* Frameworks */,
+				3B85AD4BB69F594391759A2D45BB8802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DF359679798DC071C538A2BCEFBB482 /* PBXTargetDependency */,
+			);
+			name = "Pods-KeikaiExampleTests";
+			productName = "Pods-KeikaiExampleTests";
+			productReference = 570D5B952CD2D8C5DA3E3CA5C03081A7 /* Pods_KeikaiExampleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B027BCBC45D6E8163AA635B5572B157A /* Pods-KeikaiExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0D76C5DB0DA2F0646D0DDFE3405CA7A /* Build configuration list for PBXNativeTarget "Pods-KeikaiExample" */;
+			buildPhases = (
+				1A42BC32229C80FD93646ACC25DD80DA /* Headers */,
+				B50CEF6FC4BA710F4B9CDBBFCAB75E8D /* Sources */,
+				3941DFA83FEEF963EB703032FE52580D /* Frameworks */,
+				E57311B69E410CB0734CBE45082845CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EEA667622C2E6A747E38EB3214E7807 /* PBXTargetDependency */,
+			);
+			name = "Pods-KeikaiExample";
+			productName = "Pods-KeikaiExample";
+			productReference = D1C60039B3800D65EFD22DC7B6AD3EEA /* Pods_KeikaiExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EE8D5F73A27F7A6BBF8DA5081FB317E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E76DEBAD81EA45E51A3E132BAFC253B /* Keikai */,
+				B027BCBC45D6E8163AA635B5572B157A /* Pods-KeikaiExample */,
+				929B8CC5CC53868F3C6191FBF7AA682C /* Pods-KeikaiExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B85AD4BB69F594391759A2D45BB8802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D2888A2DEE6354CFC9ADC19EB38D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E57311B69E410CB0734CBE45082845CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BF07DC4E24A5D694A58335363EEC69F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538FFFE14ADDCD73F6B24D6EBEE77FE9 /* AnimationType.swift in Sources */,
+				B5FBC9C33D1DC2DE8969A5FD2CDF6294 /* Duration.swift in Sources */,
+				8AF71BEBDDCBE10648100BCAB0B3EA0D /* Keikai-dummy.m in Sources */,
+				3F375A40BA15F4BF6170DCFE98257523 /* Keikai.swift in Sources */,
+				0D83751960FB57235E2C3026F007D1AF /* KeikaiView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50CEF6FC4BA710F4B9CDBBFCAB75E8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B38801C2BDAE68A4BEF2F07DE757F037 /* Pods-KeikaiExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E62EEEA715C24B814DB95C746A2D3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF8A9C7B37DBDF15115F3D23433AAC2D /* Pods-KeikaiExampleTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EEA667622C2E6A747E38EB3214E7807 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Keikai;
+			target = 7E76DEBAD81EA45E51A3E132BAFC253B /* Keikai */;
+			targetProxy = 843F7FE4F51E146766503E76911C98B3 /* PBXContainerItemProxy */;
+		};
+		7DF359679798DC071C538A2BCEFBB482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KeikaiExample";
+			target = B027BCBC45D6E8163AA635B5572B157A /* Pods-KeikaiExample */;
+			targetProxy = 42B7D20079160E4DDDB306F9E1D55E46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15CBDE71B7564EC5F002E1D28EBAA480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD9409BE0A88479340155181EF83A2D2 /* Pods-KeikaiExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KeikaiExample/Pods-KeikaiExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeikaiExample/Pods-KeikaiExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		515C6117BF781B649E105D65334A4A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C77AACA02883DAD2A7BD127080B932 /* Keikai.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Keikai/Keikai-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keikai/Keikai-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Keikai/Keikai.modulemap";
+				PRODUCT_MODULE_NAME = Keikai;
+				PRODUCT_NAME = Keikai;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90E7FBF0319655FE7C02E955E4350416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9BC58CE0AF9A7273D64C376CEA86177 /* Pods-KeikaiExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KeikaiExample/Pods-KeikaiExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeikaiExample/Pods-KeikaiExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		940AA618533400F6CC15EC3633420909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421A6E481C902AB502B670CAC10B8714 /* Pods-KeikaiExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KeikaiExampleTests/Pods-KeikaiExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeikaiExampleTests/Pods-KeikaiExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BAEDB2D2BC630CD1B0BC4819781FC6B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982BE4598DD742757E56E929096E1552 /* Pods-KeikaiExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KeikaiExampleTests/Pods-KeikaiExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KeikaiExampleTests/Pods-KeikaiExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BBBB4CF64A56463EC2B976F3F7AC91B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C77AACA02883DAD2A7BD127080B932 /* Keikai.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Keikai/Keikai-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Keikai/Keikai-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Keikai/Keikai.modulemap";
+				PRODUCT_MODULE_NAME = Keikai;
+				PRODUCT_NAME = Keikai;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83D7A063847725585FED2E8B25C48AFF /* Build configuration list for PBXNativeTarget "Keikai" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				515C6117BF781B649E105D65334A4A3D /* Debug */,
+				BBBB4CF64A56463EC2B976F3F7AC91B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D76C5DB0DA2F0646D0DDFE3405CA7A /* Build configuration list for PBXNativeTarget "Pods-KeikaiExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15CBDE71B7564EC5F002E1D28EBAA480 /* Debug */,
+				90E7FBF0319655FE7C02E955E4350416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5E194DD3A5957F87B2CE9AFAAF64E7A /* Build configuration list for PBXNativeTarget "Pods-KeikaiExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				940AA618533400F6CC15EC3633420909 /* Debug */,
+				BAEDB2D2BC630CD1B0BC4819781FC6B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
