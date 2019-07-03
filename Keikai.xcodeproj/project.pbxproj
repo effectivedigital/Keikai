@@ -78,7 +78,7 @@
 		FD6EDB0322CA0A1300EAA4E7 = {
 			isa = PBXGroup;
 			children = (
-				FD6EDB0F22CA0A1300EAA4E7 /* Keikai */,
+				FD6EDB0F22CA0A1300EAA4E7 /* Sources */,
 				FD6EDB1A22CA0A1300EAA4E7 /* KeikaiTests */,
 				FD6EDB0E22CA0A1300EAA4E7 /* Products */,
 			);
@@ -93,7 +93,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD6EDB0F22CA0A1300EAA4E7 /* Keikai */ = {
+		FD6EDB0F22CA0A1300EAA4E7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				FD6EDB1022CA0A1300EAA4E7 /* Keikai.h */,
@@ -102,7 +102,7 @@
 				FD0CD40E22CC7F400049CBA8 /* View */,
 				FD6EDB1122CA0A1300EAA4E7 /* Info.plist */,
 			);
-			path = Keikai;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		FD6EDB1A22CA0A1300EAA4E7 /* KeikaiTests */ = {
