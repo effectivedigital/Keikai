@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="njI-1a-Wr2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KeikaiExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="SOG-f8-i8F">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7M-wj-fbT">
+                                        <rect key="frame" x="16" y="16" width="382" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="oqx-RW-ams"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rHF-sR-MUr">
+                                        <rect key="frame" x="16" y="72" width="382" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="5dq-gC-f5W"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Left"/>
+                                            <segment title="Center"/>
+                                            <segment title="Right"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="messageTextAlignSegmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="dyh-hQ-Zrx"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="82K-Oh-UGV">
+                                        <rect key="frame" x="16" y="118" width="382" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="vHj-xt-Fnh"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Bottom"/>
+                                            <segment title="Fade"/>
+                                            <segment title="Left"/>
+                                            <segment title="Top"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="animationSegmentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="ECD-ST-DQH"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhS-rQ-rQl">
+                                        <rect key="frame" x="16" y="164" width="382" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="OOT-MI-Vh6"/>
+                                        </constraints>
+                                        <state key="normal" title="Show"/>
+                                        <connections>
+                                            <action selector="showButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ICj-3x-oTW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gU-7A-mCe">
+                                        <rect key="frame" x="16" y="220" width="382" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="showTabBarViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tP8-Qm-9JO"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdg-t3-FQf">
+                                        <rect key="frame" x="16" y="266" width="382" height="492"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SOG-f8-i8F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2c9-zw-Py1"/>
+                            <constraint firstItem="SOG-f8-i8F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T5T-74-vSs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SOG-f8-i8F" secondAttribute="bottom" id="YBl-Oy-3Ag"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SOG-f8-i8F" secondAttribute="trailing" id="my0-ng-20S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WRr-uI-ths"/>
+                    <connections>
+                        <outlet property="messageField" destination="E7M-wj-fbT" id="LEs-AF-9dd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.82608695652186" y="18.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cTP-XK-kDo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="njI-1a-Wr2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7uR-4c-4E2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="J31-Ii-wr9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DtW-ee-arz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218.84057971014494" y="-655.58035714285711"/>
+        </scene>
+    </scenes>
+</document>

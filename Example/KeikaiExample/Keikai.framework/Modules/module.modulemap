@@ -1,0 +1,11 @@
+framework module Keikai {
+  umbrella header "Keikai.h"
+
+  export *
+  module * { export * }
+}
+
+module Keikai.Swift {
+    header "Keikai-Swift.h"
+    requires objc
+}
