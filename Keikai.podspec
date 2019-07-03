@@ -18,15 +18,16 @@ Pod::Spec.new do |spec|
   spec.name         = "Keikai"
   spec.version      = "0.0.1"
   spec.summary      = "KeiKai is a Swift framework for displaying message in app."
-
+  spec.swift_version = '5.0'
+  
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "KeiKai is a Swift framework for displaying message in app."
+  spec.description  = "KeiKai is a Swift framework for displaying message in app. The framework is purely written in Swift 5 and supports in-app message on the screen itself to notify the use of any action completed."
 
-  spec.homepage     = "http://EXAMPLE/Keikai"
+  spec.homepage     = "https://github.com/aashishtamsya/Keikai"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -62,8 +63,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  # spec.platform     = :ios
+  spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"

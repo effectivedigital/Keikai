@@ -1,0 +1,6 @@
+framework module Pods_KeikaiExampleTests {
+  umbrella header "Pods-KeikaiExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
