@@ -299,138 +299,116 @@ open class KeikaiView: UIView {
 }
 // MARK: - Show methods.
 public extension KeikaiView {
-  
-  /**
-   Show the snackbar.
-   */
    func show() {
-    // Only show once
-    if superview != nil {
-      return
-    }
-    
-    // Create dismiss timer
-    dismissTimer = Timer.init(timeInterval: (TimeInterval)(duration.rawValue),
-                              target: self, selector: #selector(dismiss), userInfo: nil, repeats: false)
+    if superview != nil {  return } // Only show once
+    dismissTimer = Timer(timeInterval: (TimeInterval)(duration.rawValue), target: self, selector: #selector(dismiss), userInfo: nil, repeats: false) // Create dismiss timer
     RunLoop.main.add(dismissTimer!, forMode: .common)
-    
-    // Show or hide action button
     iconImageView.isHidden = icon == nil
-    
     actionButton.isHidden = (actionIcon == nil || actionText.isEmpty) == false || actionBlock == nil
     secondActionButton.isHidden = secondActionText.isEmpty || secondActionBlock == nil
-    
     separateView.isHidden = actionButton.isHidden
-    
     iconImageViewWidthConstraint?.constant = iconImageView.isHidden ? 0 : KeikaiView.snackbarIconImageViewWidth
     actionButtonMaxWidthConstraint?.constant = actionButton.isHidden ? 0 : actionMaxWidth
     secondActionButtonMaxWidthConstraint?.constant = secondActionButton.isHidden ? 0 : actionMaxWidth
-    
-    // Content View
+    addConstraintsToView()
+    getSuperViewToShow()
+  }
+  
+  func addConstraintsToView() {
     let finalContentView = customContentView ?? contentView
     finalContentView?.translatesAutoresizingMaskIntoConstraints = false
     addSubview(finalContentView!)
-    
-    contentViewTopConstraint = NSLayoutConstraint.init(item: finalContentView!, attribute: .top, relatedBy: .equal,
-                                                       toItem: self, attribute: .top, multiplier: 1, constant: contentInset.top)
-    contentViewBottomConstraint = NSLayoutConstraint.init(item: finalContentView!, attribute: .bottom, relatedBy: .equal,
-                                                          toItem: self, attribute: .bottom, multiplier: 1, constant: -contentInset.bottom)
-    contentViewLeftConstraint = NSLayoutConstraint.init(item: finalContentView!, attribute: .left, relatedBy: .equal,
-                                                        toItem: self, attribute: .left, multiplier: 1, constant: contentInset.left)
-    contentViewRightConstraint = NSLayoutConstraint.init(item: finalContentView!, attribute: .right, relatedBy: .equal,
-                                                         toItem: self, attribute: .right, multiplier: 1, constant: -contentInset.right)
-    
+    contentViewTopConstraint = NSLayoutConstraint(item: finalContentView!, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: contentInset.top)
+    contentViewBottomConstraint = NSLayoutConstraint(item: finalContentView!, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: -contentInset.bottom)
+    contentViewLeftConstraint = NSLayoutConstraint(item: finalContentView!, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: contentInset.left)
+    contentViewRightConstraint = NSLayoutConstraint(item: finalContentView!, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: -contentInset.right)
     addConstraints([contentViewTopConstraint!, contentViewBottomConstraint!, contentViewLeftConstraint!, contentViewRightConstraint!])
-    
-    // Get super view to show
-    if let superView = containerView ?? UIApplication.shared.delegate?.window ?? UIApplication.shared.keyWindow {
-      superView.addSubview(self)
-      // Left margin constraint
-      if #available(iOS 11.0, *) {
-        leftMarginConstraint = NSLayoutConstraint.init(
-          item: self, attribute: .left, relatedBy: .equal,
-          toItem: superView.safeAreaLayoutGuide, attribute: .left, multiplier: 1, constant: leftMargin)
-      } else {
-        leftMarginConstraint = NSLayoutConstraint.init(
-          item: self, attribute: .left, relatedBy: .equal,
-          toItem: superView, attribute: .left, multiplier: 1, constant: leftMargin)
-      }
-      
-      // Right margin constraint
-      if #available(iOS 11.0, *) {
-        rightMarginConstraint = NSLayoutConstraint.init(
-          item: self, attribute: .right, relatedBy: .equal,
-          toItem: superView.safeAreaLayoutGuide, attribute: .right, multiplier: 1, constant: -rightMargin)
-      } else {
-        rightMarginConstraint = NSLayoutConstraint.init(
-          item: self, attribute: .right, relatedBy: .equal,
-          toItem: superView, attribute: .right, multiplier: 1, constant: -rightMargin)
-      }
-      
-      // Bottom margin constraint
-      if #available(iOS 11.0, *) {
-        bottomMarginConstraint = NSLayoutConstraint.init(
-          item: self, attribute: .bottom, relatedBy: .equal,
-          toItem: superView.safeAreaLayoutGuide, attribute: .bottom, multiplier: 1, constant: -bottomMargin)
-      } else {
-        bottomMarginConstraint = NSLayoutConstraint.init(
-          item: self, attribute: .bottom, relatedBy: .equal,
-          toItem: superView, attribute: .bottom, multiplier: 1, constant: -bottomMargin)
-      }
-      print(bottomMargin)
-      // Top margin constraint
-      if #available(iOS 11.0, *) {
-        topMarginConstraint = NSLayoutConstraint.init(
-          item: self, attribute: .top, relatedBy: .equal,
-          toItem: superView.safeAreaLayoutGuide, attribute: .top, multiplier: 1, constant: topMargin)
-      } else {
-        topMarginConstraint = NSLayoutConstraint.init(
-          item: self, attribute: .top, relatedBy: .equal,
-          toItem: superView, attribute: .top, multiplier: 1, constant: topMargin)
-      }
-      
-      // Center X constraint
-      centerXConstraint = NSLayoutConstraint.init(
-        item: self, attribute: .centerX, relatedBy: .equal,
-        toItem: superView, attribute: .centerX, multiplier: 1, constant: 0)
-      
-      // Min height constraint
-      let minHeightConstraint = NSLayoutConstraint.init(
-        item: self, attribute: .height, relatedBy: .greaterThanOrEqual,
-        toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: KeikaiView.snackbarMinHeight)
-      
-      // Avoid the "UIView-Encapsulated-Layout-Height" constraint conflicts
-      // http://stackoverflow.com/questions/25059443/what-is-nslayoutconstraint-uiview-encapsulated-layout-height-and-how-should-i
-      leftMarginConstraint?.priority = UILayoutPriority(999)
-      rightMarginConstraint?.priority = UILayoutPriority(999)
-      topMarginConstraint?.priority = UILayoutPriority(999)
-      bottomMarginConstraint?.priority = UILayoutPriority(999)
-      centerXConstraint?.priority = UILayoutPriority(999)
-      
-      // Add constraints
-      superView.addConstraint(leftMarginConstraint!)
-      superView.addConstraint(rightMarginConstraint!)
-      superView.addConstraint(bottomMarginConstraint!)
-      superView.addConstraint(topMarginConstraint!)
-      superView.addConstraint(centerXConstraint!)
-      superView.addConstraint(minHeightConstraint)
-      
-      // Active or deactive
-      topMarginConstraint?.isActive = false // For top animation
-      leftMarginConstraint?.isActive = self.shouldActivateLeftAndRightMarginOnCustomContentView ? true : customContentView == nil
-      rightMarginConstraint?.isActive = self.shouldActivateLeftAndRightMarginOnCustomContentView ? true : customContentView == nil
-      centerXConstraint?.isActive = customContentView != nil
-      
-      // Show
-      showWithAnimation()
-    } else {
-      fatalError("TTGSnackbar needs a keyWindows to display.")
-    }
   }
   
-  /**
-   Show.
-   */
+  fileprivate func getSuperViewToShow() {
+    guard let superView = containerView ?? UIApplication.shared.delegate?.window ?? UIApplication.shared.keyWindow else {
+      fatalError("KeiKaiView needs a keyWindows to display.")
+    }
+    superView.addSubview(self)
+    // Left margin constraint
+    if #available(iOS 11.0, *) {
+      leftMarginConstraint = NSLayoutConstraint.init(
+        item: self, attribute: .left, relatedBy: .equal,
+        toItem: superView.safeAreaLayoutGuide, attribute: .left, multiplier: 1, constant: leftMargin)
+    } else {
+      leftMarginConstraint = NSLayoutConstraint.init(
+        item: self, attribute: .left, relatedBy: .equal,
+        toItem: superView, attribute: .left, multiplier: 1, constant: leftMargin)
+    }
+    
+    // Right margin constraint
+    if #available(iOS 11.0, *) {
+      rightMarginConstraint = NSLayoutConstraint.init(
+        item: self, attribute: .right, relatedBy: .equal,
+        toItem: superView.safeAreaLayoutGuide, attribute: .right, multiplier: 1, constant: -rightMargin)
+    } else {
+      rightMarginConstraint = NSLayoutConstraint.init(
+        item: self, attribute: .right, relatedBy: .equal,
+        toItem: superView, attribute: .right, multiplier: 1, constant: -rightMargin)
+    }
+    
+    // Bottom margin constraint
+    if #available(iOS 11.0, *) {
+      bottomMarginConstraint = NSLayoutConstraint.init(
+        item: self, attribute: .bottom, relatedBy: .equal,
+        toItem: superView.safeAreaLayoutGuide, attribute: .bottom, multiplier: 1, constant: -bottomMargin)
+    } else {
+      bottomMarginConstraint = NSLayoutConstraint.init(
+        item: self, attribute: .bottom, relatedBy: .equal,
+        toItem: superView, attribute: .bottom, multiplier: 1, constant: -bottomMargin)
+    }
+    // Top margin constraint
+    if #available(iOS 11.0, *) {
+      topMarginConstraint = NSLayoutConstraint.init(
+        item: self, attribute: .top, relatedBy: .equal,
+        toItem: superView.safeAreaLayoutGuide, attribute: .top, multiplier: 1, constant: topMargin)
+    } else {
+      topMarginConstraint = NSLayoutConstraint.init(
+        item: self, attribute: .top, relatedBy: .equal,
+        toItem: superView, attribute: .top, multiplier: 1, constant: topMargin)
+    }
+    
+    // Center X constraint
+    centerXConstraint = NSLayoutConstraint.init(
+      item: self, attribute: .centerX, relatedBy: .equal,
+      toItem: superView, attribute: .centerX, multiplier: 1, constant: 0)
+    
+    // Min height constraint
+    let minHeightConstraint = NSLayoutConstraint.init(
+      item: self, attribute: .height, relatedBy: .greaterThanOrEqual,
+      toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: KeikaiView.snackbarMinHeight)
+    
+    // Avoid the "UIView-Encapsulated-Layout-Height" constraint conflicts
+    // http://stackoverflow.com/questions/25059443/what-is-nslayoutconstraint-uiview-encapsulated-layout-height-and-how-should-i
+    leftMarginConstraint?.priority = UILayoutPriority(999)
+    rightMarginConstraint?.priority = UILayoutPriority(999)
+    topMarginConstraint?.priority = UILayoutPriority(999)
+    bottomMarginConstraint?.priority = UILayoutPriority(999)
+    centerXConstraint?.priority = UILayoutPriority(999)
+    
+    // Add constraints
+    superView.addConstraint(leftMarginConstraint!)
+    superView.addConstraint(rightMarginConstraint!)
+    superView.addConstraint(bottomMarginConstraint!)
+    superView.addConstraint(topMarginConstraint!)
+    superView.addConstraint(centerXConstraint!)
+    superView.addConstraint(minHeightConstraint)
+    
+    // Active or deactive
+    topMarginConstraint?.isActive = false // For top animation
+    leftMarginConstraint?.isActive = self.shouldActivateLeftAndRightMarginOnCustomContentView ? true : customContentView == nil
+    rightMarginConstraint?.isActive = self.shouldActivateLeftAndRightMarginOnCustomContentView ? true : customContentView == nil
+    centerXConstraint?.isActive = customContentView != nil
+    
+    // Show
+    showWithAnimation()
+  }
+  
   fileprivate func showWithAnimation() {
     var animationBlock: (() -> Void)?
     let superViewWidth = (superview?.frame)!.width
@@ -623,26 +601,42 @@ private extension KeikaiView {
   }
 }
 
-// MARK: - Init configuration.
+// MARK: - Private Methods
 private extension KeikaiView {
-  
   func configure() {
-    // Clear subViews
-    for subView in subviews {
-      subView.removeFromSuperview()
+    subviews.forEach { $0.removeFromSuperview() } // Clear subViews
+    registerNotifications()
+    setupViews()
+    addConstraints()
+    self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapSelf)))
+    self.isUserInteractionEnabled = true
+    [UISwipeGestureRecognizer.Direction.up, .down, .left, .right].forEach { (direction) in
+      let gesture = UISwipeGestureRecognizer(target: self, action: #selector(self.didSwipeSelf(_:)))
+      gesture.direction = direction
+      self.addGestureRecognizer(gesture)
     }
-    
-    // Notification
+  }
+  
+  func dropShadow() {
+    layer.shadowOpacity = 0.4
+    layer.shadowRadius  = 2
+    layer.shadowColor   = UIColor.black.cgColor
+    layer.shadowOffset  = CGSize(width: 0, height: 2)
+  }
+  
+  func registerNotifications() {
     NotificationCenter.default.addObserver(self, selector: #selector(onScreenRotateNotification), name: UIDevice.orientationDidChangeNotification, object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(onKeyboardHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
-    
+  }
+  
+  func setupViews() {
     translatesAutoresizingMaskIntoConstraints = false
     backgroundColor                           = #colorLiteral(red: 0.337254902, green: 0.7411764706, blue: 0.3568627451, alpha: 1)
     layer.cornerRadius                        = cornerRadius
     layer.shouldRasterize                     = true
     layer.rasterizationScale                  = UIScreen.main.scale
-
+    
     contentView                                           = UIView()
     contentView.translatesAutoresizingMaskIntoConstraints = false
     contentView.frame                                     = KeikaiView.defaultFrame
@@ -701,8 +695,9 @@ private extension KeikaiView {
     activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
     activityIndicatorView.stopAnimating()
     contentView.addSubview(activityIndicatorView)
-    
-    // Add constraints
+  }
+  
+  func addConstraints() {
     let hConstraints = NSLayoutConstraint.constraints(
       withVisualFormat: "H:|-0-[iconImageView]-2-[messageLabel]-2-[seperateView(0.5)]-2-[actionButton(>=44@999)]-0-[secondActionButton(>=44@999)]-0-|",
       options: NSLayoutConstraint.FormatOptions(rawValue: 0),
@@ -781,25 +776,5 @@ private extension KeikaiView {
     actionButton.setContentCompressionResistancePriority(UILayoutPriority(999), for: .horizontal)
     secondActionButton.setContentHuggingPriority(UILayoutPriority(998), for: .horizontal)
     secondActionButton.setContentCompressionResistancePriority(UILayoutPriority(999), for: .horizontal)
-    
-    // add gesture recognizers
-    // tap gesture
-    self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.didTapSelf)))
-    
-    self.isUserInteractionEnabled = true
-    
-    // swipe gestures
-    [UISwipeGestureRecognizer.Direction.up, .down, .left, .right].forEach { (direction) in
-      let gesture = UISwipeGestureRecognizer(target: self, action: #selector(self.didSwipeSelf(_:)))
-      gesture.direction = direction
-      self.addGestureRecognizer(gesture)
-    }
-  }
-  
-  func dropShadow() {
-    layer.shadowOpacity = 0.4
-    layer.shadowRadius  = 2
-    layer.shadowColor   = UIColor.black.cgColor
-    layer.shadowOffset  = CGSize(width: 0, height: 2)
   }
 }

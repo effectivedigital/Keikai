@@ -16,9 +16,9 @@
 		FD0CD44B22CC91C90049CBA8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0CD44A22CC91C90049CBA8 /* TabBarController.swift */; };
 		FD0CD44D22CC91FE0049CBA8 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0CD44C22CC91FE0049CBA8 /* TabBar.storyboard */; };
 		FD0CD45122CC92FD0049CBA8 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0CD45022CC92FD0049CBA8 /* OneViewController.swift */; };
-		FD0CD46F22CCA0CD0049CBA8 /* Keikai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CD46E22CCA0CD0049CBA8 /* Keikai.framework */; };
-		FD0CD47022CCA0CF0049CBA8 /* Keikai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CD46E22CCA0CD0049CBA8 /* Keikai.framework */; };
-		FD0CD47122CCA0CF0049CBA8 /* Keikai.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CD46E22CCA0CD0049CBA8 /* Keikai.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD0CD47322CCA6E10049CBA8 /* Keikai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CD47222CCA6E10049CBA8 /* Keikai.framework */; };
+		FD0CD47422CCA6F30049CBA8 /* Keikai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CD47222CCA6E10049CBA8 /* Keikai.framework */; };
+		FD0CD47522CCA6F30049CBA8 /* Keikai.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD0CD47222CCA6E10049CBA8 /* Keikai.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FD0CD47122CCA0CF0049CBA8 /* Keikai.framework in Embed Frameworks */,
+				FD0CD47522CCA6F30049CBA8 /* Keikai.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +59,7 @@
 		FD0CD44A22CC91C90049CBA8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FD0CD44C22CC91FE0049CBA8 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		FD0CD45022CC92FD0049CBA8 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
-		FD0CD46E22CCA0CD0049CBA8 /* Keikai.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Keikai.framework; sourceTree = "<group>"; };
+		FD0CD47222CCA6E10049CBA8 /* Keikai.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Keikai.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0CD47022CCA0CF0049CBA8 /* Keikai.framework in Frameworks */,
-				FD0CD46F22CCA0CD0049CBA8 /* Keikai.framework in Frameworks */,
+				FD0CD47422CCA6F30049CBA8 /* Keikai.framework in Frameworks */,
+				FD0CD47322CCA6E10049CBA8 /* Keikai.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +85,7 @@
 		FD0CD41122CC8CAA0049CBA8 = {
 			isa = PBXGroup;
 			children = (
-				FD0CD46E22CCA0CD0049CBA8 /* Keikai.framework */,
+				FD0CD47222CCA6E10049CBA8 /* Keikai.framework */,
 				FD0CD41C22CC8CAA0049CBA8 /* KeikaiExample */,
 				FD0CD43122CC8CAD0049CBA8 /* KeikaiExampleTests */,
 				FD0CD41B22CC8CAA0049CBA8 /* Products */,
