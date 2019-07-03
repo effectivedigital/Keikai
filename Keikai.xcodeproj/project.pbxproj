@@ -78,7 +78,7 @@
 		FD6EDB0322CA0A1300EAA4E7 = {
 			isa = PBXGroup;
 			children = (
-				FD6EDB0F22CA0A1300EAA4E7 /* Keikai */,
+				FD6EDB0F22CA0A1300EAA4E7 /* Sources */,
 				FD6EDB1A22CA0A1300EAA4E7 /* KeikaiTests */,
 				FD6EDB0E22CA0A1300EAA4E7 /* Products */,
 			);
@@ -93,7 +93,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD6EDB0F22CA0A1300EAA4E7 /* Keikai */ = {
+		FD6EDB0F22CA0A1300EAA4E7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				FD6EDB1022CA0A1300EAA4E7 /* Keikai.h */,
@@ -102,7 +102,7 @@
 				FD0CD40E22CC7F400049CBA8 /* View */,
 				FD6EDB1122CA0A1300EAA4E7 /* Info.plist */,
 			);
-			path = Keikai;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		FD6EDB1A22CA0A1300EAA4E7 /* KeikaiTests */ = {
@@ -404,14 +404,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Keikai/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.adweb.ios.Keikai;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aashishtamsya.ios.Keikai;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -431,14 +432,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Keikai/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.adweb.ios.Keikai;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aashishtamsya.ios.Keikai;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
