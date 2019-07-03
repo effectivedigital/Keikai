@@ -1,0 +1,6 @@
+framework module Keikai {
+  umbrella header "Keikai-umbrella.h"
+
+  export *
+  module * { export * }
+}
